@@ -1,0 +1,226 @@
+<!Doctype html>
+<html>
+<head lang="en-US">
+	<title>Portfolio</title>
+	<style>
+	.bgimg {
+		    background-image: url('1.jpg');
+		    min-height: 100%;
+		    background-position: center;
+		    background-size: cover;
+			      }
+              #grad{background: -moz-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1));}
+
+         input[type=submit]:hover {
+				}
+				background-color:#45a049;
+
+	input[type=reset]:hover {
+			background-color:#45a049;
+		}
+
+
+	fieldset {
+    		        display: block;
+			width:70%;
+			text-align:center;
+		 	margin-left: 15%;
+    			margin-right: 20%;
+				}
+
+	legend{color:red;
+
+        </style>
+        <script src="myvalidate.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+<body class="bgimg">
+<h1 style="text-align:center">Portfolio</h1>
+<form name="myForm" id="myForm" method="post" action="connect.php">
+<fieldset>
+<legend><strong>Personal Information</strong></legend>
+<table border="0" align="center" >
+             <tr>
+             <th>First Name</th>
+             <td>:</td>
+	<td><input type="text" name="fname" id="firstname" placeholder="Enter your Name"></td>
+	</tr>
+
+	 <tr>
+	<th>Last Name</th>
+	<td>:</td>
+	<td><input type="text" name="lname" id="lastname" placeholder="Enter your Surname"></td>
+	</tr>
+
+        <tr>
+	<th>Nick-Name</th>
+	<td>:</td>
+	<td><input type="text" name="nname" id="nickname" placeholder="Enter your Nickname"></td>
+	</tr>
+
+	<tr>
+	<th>D.O.B</th>
+	<td>:</td>
+	<td><input id="bday" type="date" name="dob" placeholder="dd/mm/yyyy" required></td>
+	</tr>
+
+	<tr>
+	<th>Gender</th>
+	<td>:</td>
+	<td align="left"><input type="radio" name="gender" value="Male" checked> Male
+                         <input type="radio" name="gender" value="Female" > Female</td>
+        </tr>
+
+        <tr>
+        <th>Contact No</th>
+        <td>:</td>
+        <td><input type="tel" name="num" placeholder="Mobile Number"></td>
+        </tr>
+
+        <tr>
+        <th>Email</th>
+        <td>:</td>
+        <td><input type="email" name="em" placeholder="example@email.com"></td>
+	</tr>
+
+	<tr>
+	<th style="vertical-align:top">Address</th>
+	<td style="vertical-align:top">:</td>
+	<td><textarea name="addr" rows="3" cols="32" placeholder="address"></textarea></td>
+	</tr>
+
+	<tr>
+	<th>Your Image</th>
+	<td>:</td>
+	<td><input type="file" name="pic" id="pic"></td>
+	</tr>
+
+
+</table>
+</fieldset>
+
+<fieldset>
+ <legend><strong>Qualifications</strong></legend>
+<table border="0" align="center">
+        <tr>
+	<th>H.S.C</th>
+	<td>:</td>
+	<td align="left"><input type="number" name="hsc" id="hscp" min="0" max="100" placeholder="Enter your %">%</td>
+	<tr>
+
+	<tr>
+	<th>S.S.C</th>
+	<td>:</td>
+	<td align="left"><input type="number" name="ssc" id="sscp" min="0" max="100" placeholder="Enter your %">%</td>
+	</tr>
+
+	<tr>
+	<th>Diploma</th>
+	<td>:</td>
+	<td align="left"><input type="number" name="dip" id="dipp" min="0" max="100" placeholder="Enter your %">%(if any)</td>
+	</tr>
+
+	<tr>
+	<th>Degree Semester</th>
+	<td>:</td>
+	<td align="left"><input list="sem" name="sem" placeholder="Enter your Sem"></td>
+	<td><datalist id="sem">
+		 <option value="1">
+		 <option value="2">
+		 <option value="3">
+		 <option value="4">
+		 <option value="5">
+		 <option value="6">
+		 <option value="7">
+		 <option value="8">
+	</datalist></td>
+	</tr>
+
+
+</table>
+</fieldset>
+
+<fieldset>
+ <legend><strong>Achievements & Skills</strong></legend>
+ <table border="0" align="center">
+             <tr>
+	<th style="vertical-align:top">Achievements</th>
+	<td style="vertical-align:top">:</td>
+	<td><textarea name="achieve" rows="5" cols="60" placeholder="List your Achievements here!!!">
+	</textarea></td>
+	</tr>
+
+	<tr>
+	<th style="vertical-align:top">Skills</th>
+	<td style="vertical-align:top">:</td>
+	<td><textarea name="skills" rows="5" cols="60" placeholder="List some of your Skills ">
+	</textarea></td>
+	</tr>
+
+	<tr>
+	<th rowspan="8" style="vertical-align:top">Programs/Workshops</th>
+	<td rowspan="8" style="vertical-align:top">:</td>
+	<tr><td align="left"><input type="checkbox" name="progg" value="EH">Ethical Hacking</td></tr>
+	<tr><td align="left"><input type="checkbox" name="progg" value="Android">Android upgradation</td></tr>
+	<tr><td align="left"><input type="checkbox" name="progg" value="PS">Photoshop</td></tr>
+	<tr><td align="left"><input type="checkbox" name="progg" value="SL">SciLab</td></tr>
+	<tr><td align="left"><input type="checkbox" name="progg" value="RW">Robotics</td></tr>
+	<tr><td align="left"><input type="checkbox" name="progg" value="WD">Web Development</td></tr>
+	<tr><td align="left"><input type="checkbox" name="progg" value="A">Animation</td></tr>
+	<tr>
+	<th style="vertical-align:top">Additional</th>
+	<td style="vertical-align:top">:</td>
+	<td><textarea name="additional" rows="5" cols="60"></textarea></td>
+	</tr>
+
+</table>
+</fieldset>
+
+<fieldset>
+<legend><strong>Project Involved</strong></legend>
+<table border="0" align="center" >
+
+             <tr>
+	<th>Project Title</th>
+	<td>:</td>
+	<td align="left"><input type="text" name="projname" id="pname" placeholder="Title"></td>
+	</tr>
+
+	<tr>
+	<th>Faculty Member Involved</th>
+	<td>:</td>
+	<td align="left"><input type="text" name="facmem" id="facname" placeholder="Faculty member's Name"></td>
+	</tr>
+
+	<tr>
+	<th style="vertical-align:top">Project Description</th>
+	<td style="vertical-align:top">:</td>
+	<td align="left"><textarea name="description" rows="5" cols="60" >
+	</textarea></td>
+	</tr>
+
+
+</table>
+</fieldset>
+
+<fieldset>
+<legend><strong>Professional Membership</strong></legend>
+<table border="0" align="center" >
+
+	<tr><td align="left"><input type="checkbox" name="member" value="CSI">CSI</td></tr>
+	<tr><td align="left"><input type="checkbox" name="member" value="ACM">ACM</td></tr>
+	<tr><td align="left"><input type="checkbox" name="member" value="IEEE">IEEE</td></tr>
+	<tr><td align="left"><input type="checkbox" name="member" value="MATHLAB">MATH LAB</td></tr>
+
+
+</table>
+</fieldset>
+		<center>
+		<br>
+		<input type="submit" onclick="myFunction()" value="Submit">
+	    	<input type="reset" value="Reset">
+	    	</center>
+
+</form>
+</body>
+</html>
